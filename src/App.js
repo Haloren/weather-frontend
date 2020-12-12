@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 class App extends React.Component {
   
@@ -12,23 +13,25 @@ class App extends React.Component {
     return (
       <div className="App">
         <div>
-          <h3 className="day">Tuesday</h3>
-          <h3 className="date">Dec 8 </h3>
-          <h3 className="time">12:23 am</h3>
+          <div className="datetimecontainer">
+            <h3 className="day">Tuesday</h3>
+            <h3 className="date">Dec 8 </h3>
+            <h3 className="time">12:23 am</h3>
+          </div>
           <h2 className="location">Jumanji, FI</h2>
           <h1 className="temp">46°</h1>
         </div>
         <br></br>
-        <div>
-          <div>
+        <div className="nextdayscontainer">
+          <div className="datainline">
             <h3 className="nextdays">Wednesday</h3>
             <h3 className="nextdaystemp">46°</h3>
           </div>
-          <div>
+          <div className="datainline">
             <h3 className="nextdays">Thursday</h3>
             <h3 className="nextdaystemp">49°</h3>
           </div>
-          <div>
+          <div className="datainline">
             <h3 className="nextdays">Friday</h3>
             <h3 className="nextdaystemp">48°</h3>
           </div>

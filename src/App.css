@@ -1,15 +1,19 @@
 .App {
-
+    
 }
 
-.day {
+.datetimecontainer{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+    .day {
 
-}
-.date {
-}
-.time {
+    }
+    .date {
+    }
+    .time {
 
-}
+    }
 
 .location {
 
@@ -17,13 +21,19 @@
 .temp {
 
 }
-
-.nextdays {
-
+.nextdayscontainer{
+    border: 2px solid #000;
 }
-.nextdaystemp{
-
-}
+    .datainline {
+        display: grid;
+        grid-template-columns: 100px 100px;
+    }
+        .nextdays {
+            
+        }
+        .nextdaystemp{
+            
+        }
 
 .copyright{
 
