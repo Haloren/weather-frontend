@@ -1,4 +1,6 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import {addUser} from '../actions/addUser'
 
 class UserForm extends React.Component {
 
@@ -12,8 +14,10 @@ class UserForm extends React.Component {
         })
     }
 
-    handleOnSubmit = () => {
-        
+    handleOnSubmit = (event) => {
+        event.preventDefault()
+        this.props.addUser(this.state)
+        this.setState({email: ''});
     }
 
     render() {
@@ -29,4 +33,4 @@ class UserForm extends React.Component {
     }
 }
 
-export default UserForm
+export default connect(null, {addUser})(UserForm)
