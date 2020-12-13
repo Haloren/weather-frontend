@@ -1,8 +1,55 @@
+/* COLOR PALETTE */
+:root {
+    --white: #ECE7EE;
+    --silver: #C0C0C0;
+    --black: #030b38;
+}
+
+body {
+    background-color: var(--silver);
+}
+
 .App {
     
 }
 
+.input-container {
+    border: 1px solid var(--black);
+}
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+    top: 8px;
+    bottom: 10px;
+    left: 20px;
+    font-size: 11px;
+    opacity: 1;
+}
+    .input-text {
+        font-size: 14px;
+        width: 200px;
+        height: 35px;
+    }
+    .floating-label {
+        position: absolute;
+        pointer-events: none;
+        left: 20px;
+        top: 18px;
+        transition: 0.2s ease all;
+    }
+    .input-btn {
+        width: 80px;
+        height: 40px;
+    }
+    .input-btn:hover {
+        cursor: pointer;
+        background-color: var(--black);
+        color: var(--white);
+    }
 
 .copyright{
-
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+    color: var(--white);
+    text-shadow:1px 1px 10px var(--black);
 }
