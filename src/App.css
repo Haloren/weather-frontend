@@ -2,38 +2,6 @@
     
 }
 
-.datetimecontainer{
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-}
-    .day {
-
-    }
-    .date {
-    }
-    .time {
-
-    }
-
-.location {
-
-}
-.temp {
-
-}
-.nextdayscontainer{
-    border: 2px solid #000;
-}
-    .datainline {
-        display: grid;
-        grid-template-columns: 100px 100px;
-    }
-        .nextdays {
-            
-        }
-        .nextdaystemp{
-            
-        }
 
 .copyright{
 
