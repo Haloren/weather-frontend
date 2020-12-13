@@ -8,14 +8,14 @@ import {fetchUsers} from '../actions/fetchUsers'
 class UsersContainer extends React.Component {
 
     componentDidMount() {
-        // this.props.fetchUsers()
+        this.props.fetchUsers()
     }
 
     render() {
         return (
             <div>
-                <Users/>
                 <UserForm/>
+                <Users users={this.props.users}/>
             </div>
         )
     }
