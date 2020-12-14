@@ -7,10 +7,10 @@ const User = (props) => {
     // console.log(user)
     return (
         // <li key={props.user.id}>
-        <li>
+        <h1>
             {/* {props.user.email} */}
             {user ? user.email : null}
-        </li>
+        </h1>
     )
 }
 
