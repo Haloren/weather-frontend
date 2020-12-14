@@ -1,6 +1,6 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {fetchUsers} from './actions/fetchUsers';
+// import {connect} from 'react-redux';
+// import {fetchUsers} from './actions/fetchUsers';
 import './App.css';
 import UsersContainer from './containers/UsersContainer';
 
