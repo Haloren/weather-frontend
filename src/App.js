@@ -13,9 +13,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <UsersContainer/>
+        <header>Wether it's Weather</header>
 
-        <footer className="copyright"><small> &copy;2020WetherWeather </small></footer>
+          <UsersContainer/>
+
+        <footer><small> &copy;2020WetherWeather </small></footer>
       </div>
     );
   }
