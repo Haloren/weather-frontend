@@ -14,19 +14,16 @@ class ZipForm extends React.Component {
 
     handleOnSubmit = (event) => {
         event.preventDefault()
-        // this.props.addZip(this.state)
-        addZip(this.state, this.props.id)
+        this.props.addZip(this.state, this.props.user.id)
         this.setState({zip: ''});
     }
 
     render() {
         return (
             <div>
-                <form onSubmit={this.handleOnSubmit}>
-                <form className="input-container">
+                <form className="input-container" onSubmit={this.handleOnSubmit}>
                     <input className="input-text" type="text" name="zip" value={this.state.zip} onChange={this.handleOnChange} placeholder="Enter Zip Code" required></input>
                     <input className="input-btn" type="submit" value="Submit"></input>
-                </form>
                 </form>
             </div>
         )

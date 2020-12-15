@@ -1,7 +1,7 @@
 import React from 'react'
 import ZipForm from '../components/ZipForm'
 import Zips from '../components/Zips'
-import userReducer from '../reducers/userReducer'
+// import userReducer from '../reducers/userReducer'
 
 class ZipsContainer extends React.Component {
 

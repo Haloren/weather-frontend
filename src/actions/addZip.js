@@ -10,6 +10,6 @@ export const addZip = (zip, userId) => {
             body: JSON.stringify(zip),
         })
         .then(resp => resp.json())
-        .then(zip => dispatch({type: 'ADD_ZIP', payload: zip}))
+        .then(user => dispatch({type: 'ADD_ZIP', payload: user}))
     }
 }
