@@ -6,6 +6,12 @@ export const deleteZip = (userId, zipId) => {
             },
         )
         .then(resp => resp.json())
-        .then(user => dispatch({type: 'DELETE_ZIP', payload: user}))
+        .then(user => {
+            if (user.message) {
+                alert(user.message)
+            } else {
+                dispatch({type: 'DELETE_ZIP', payload: user})
+            }
+        })
     }
 }
