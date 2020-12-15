@@ -10,6 +10,14 @@ export const addZip = (zip, userId) => {
             body: JSON.stringify(zip),
         })
         .then(resp => resp.json())
-        .then(user => dispatch({type: 'ADD_ZIP', payload: user}))
+        .then(user => {
+            // debugger;
+            if (user.message) {
+                alert(user.message)
+            } else {
+                dispatch({type: 'ADD_ZIP', payload: user})
+            }
+        }
+        )
     }
 }
