@@ -5,7 +5,11 @@ const Zips = (props) => {
 
     return (
         <div>
-            Zips
+            {props.zips && props.zips.map(zip => 
+                <li key={zip.id}>
+                    {zip.zip}
+                </li>    
+            )}
         </div>
     )
 }

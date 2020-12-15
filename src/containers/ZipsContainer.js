@@ -8,7 +8,7 @@ class ZipsContainer extends React.Component {
     render() {
         return (
             <div>
-                <ZipForm />
+                <ZipForm user={this.props.user}/>
                 <Zips zips={this.props.user && this.props.user.locations}/>
             </div>
         )

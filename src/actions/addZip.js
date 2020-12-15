@@ -1,15 +1,15 @@
-export const addUser = (email) => {
+export const addZip = (zip, userId) => {
     // debugger;
     return (dispatch) => {
-        fetch('http://localhost:3001/users', {
+        fetch(`http://localhost:3001/users/${userId}/locations`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            body: JSON.stringify(email),
+            body: JSON.stringify(zip),
         })
         .then(resp => resp.json())
-        .then(user => dispatch({type: 'ADD_USER', payload: user}))
+        .then(zip => dispatch({type: 'ADD_ZIP', payload: zip}))
     }
 }

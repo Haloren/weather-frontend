@@ -25,6 +25,8 @@ header {
 .input-container {
     border: 1px solid var(--black);
 }
+
+/* FLOATING PLACEHOLDER/LABEL FOR INPUTS */
 input:focus ~ .floating-label,
 input:not(:focus):valid ~ .floating-label{
     top: 30px;
