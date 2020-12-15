@@ -8,14 +8,25 @@ export default function userReducer(state = {users: []}, action) {
             return {...state, users: [...state.users, action.payload]}
 
         case 'ADD_ZIP':
-            let users = state.users.map(user => {
+            let usersZipAdd = state.users.map(user => {
                 if (user.id === action.payload.id) {
                     return action.payload
                 } else {
                     return user
                 }
             })
-            return {...state, users: users}
+            return {...state, users: usersZipAdd}
+
+        case 'DELETE_ZIP':
+            // debugger
+            let usersZipDelete = state.users.map(user => {
+                if (user.id === action.payload.id) {
+                    return action.payload
+                } else {
+                    return user
+                }
+            })
+            return {...state, users: usersZipDelete}
 
         default:
             return state
