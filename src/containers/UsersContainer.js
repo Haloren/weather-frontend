@@ -23,6 +23,7 @@ class UsersContainer extends React.Component {
                     <Route exact path='/users' render={(routerProps) => <Users {...routerProps} users={this.props.users}/>} ></Route>
                 
                     <Route exact path='/users/:id' render={(routerProps) => <User {...routerProps} users={this.props.users}/>}></Route>
+
                 </Switch>
             </div>
         )

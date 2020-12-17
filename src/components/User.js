@@ -1,4 +1,5 @@
 import React from 'react'
+import NotesContainer from '../containers/NotesContainer'
 import ZipsContainer from '../containers/ZipsContainer'
 
 const User = (props) => {
@@ -16,6 +17,7 @@ const User = (props) => {
                 {user && user.email}
             </h1>
             <ZipsContainer user={user}/>
+            <NotesContainer user={user} />
         </div>
     )
 }

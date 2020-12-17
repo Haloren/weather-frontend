@@ -13,12 +13,14 @@ const Zips = (props) => {
 
     return (
         <div>
+            <h1> Saved Locations </h1>
             {props.zips && props.zips.map(zip => 
                 <li key={zip.id}>
                     {zip.zip}
                     <button onClick={() => handleDelete(zip)}>Delete</button>
                 </li>    
             )}
+            <hr></hr>
         </div>
     )
 }
