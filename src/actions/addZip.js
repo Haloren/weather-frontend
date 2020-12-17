@@ -17,7 +17,6 @@ export const addZip = (zip, userId) => {
             } else {
                 dispatch({type: 'ADD_ZIP', payload: user})
             }
-        }
-        )
+        })
     }
 }

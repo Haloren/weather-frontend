@@ -21,6 +21,7 @@ class ZipForm extends React.Component {
     render() {
         return (
             <div>
+                <h1>Add a Location</h1>
                 <form className="input-container" onSubmit={this.handleOnSubmit}>
                     <input className="input-text" type="text" name="zip" value={this.state.zip} onChange={this.handleOnChange} placeholder="Enter Zip Code" required minLength="5" maxLength="5"></input>
                     <input className="input-btn" type="submit" value="Submit"></input>
