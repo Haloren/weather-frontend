@@ -1,9 +1,15 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
+import {deleteNote} from '../actions/deleteNote'
 
 const Notes = (props) => {
     // console.log(props)
+    const handleDelete = (note) => {
+        // send noteId, noteId to deleteNote
+        // debugger;
+        props.deleteNote(note.user_id, note.id)
+    }
 
     return (
         <div>
@@ -18,7 +24,7 @@ const Notes = (props) => {
                         <br></br>
                         {note.notes}
                     </Link>
-                    <button>Delete</button>
+                    <button onClick={() => handleDelete(note)}>Delete</button>
                         <hr></hr>
                 </li>    
             )}
@@ -26,4 +32,4 @@ const Notes = (props) => {
     )
 }
 
-export default connect(null)(Notes)
+export default connect(null, {deleteNote})(Notes)

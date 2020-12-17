@@ -17,6 +17,8 @@ class UsersContainer extends React.Component {
         return (
             <div>
                 <Switch>
+                    {/* Home Page Route goes here ='/' */}
+
                     {/* <UserForm/> */}
                     <Route exact path='/users/new' component={UserForm}></Route>
                     {/* <Users users={this.props.users}/> */}

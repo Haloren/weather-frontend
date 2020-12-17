@@ -38,6 +38,17 @@ export default function userReducer(state = {users: []}, action) {
             })
             return {...state, users: usersNoteAdd}
 
+        case 'DELETE_NOTE':
+            // debugger
+            let usersNoteDelete = state.users.map(user => {
+                if (user.id === action.payload.id) {
+                    return action.payload
+                } else {
+                    return user
+                }
+            })
+            return {...state, users: usersNoteDelete}
+
         default:
             return state
     }
